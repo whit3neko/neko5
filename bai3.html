@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài 3</title>
+    <link rel="stylesheet" href="css/bai3.css" />
+  </head>
+  <body>
+
+    <div class="container">
+      <h1>Bán hàng</h1>
+      <select name="" id="filter" onchange="Filter()">
+        <option value="">---Chọn mức giá---</option>
+        <option value="100">Dưới 100</option>
+        <option value="200">Dưới 200</option>
+        <option value="500">Dưới 500</option>
+        <option value="600">600</option>
+        <option value="700">700</option>
+        <option value="1000">Chọn tất cả</option>
+      </select>
+      <table border="1" id="Table">
+        <thead>
+          <tr>
+            <th>
+              <input
+                type="checkbox"
+                name="checkall"
+                id="check_all"
+                onclick="checkall(this);Calculator()"
+                />
+            </th>
+            <th>Hàng hoá</th>
+            <th>Đơn giá</th>
+            <th>Số lượng</th>
+            <th>Thành tiền</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="sanpham">
+            <td>
+              <input type="checkbox" name="checkbox" onclick="Calculator()" />
+            </td>
+            <td id="sanpham">iPhone 9</td>
+            <td><span class="dG">700</span>$</td>
+            <td>
+              <input
+                type="number"
+                onchange="Calculator()"
+                min="0"
+                disabled
+                class="sL"
+                />
+            </td>
+            <td class="TT"></td>
+          </tr>
+          <tr class="sanpham">
+            <td>
+              <input type="checkbox" name="checkbox" onclick="Calculator()" />
+            </td>
+            <td>Samsung</td>
+            <td><span class="dG">400</span>$</td>
+            <td>
+              <input
+                type="number"
+                onchange="Calculator()"
+                min="0"
+                disabled
+                class="sL"
+                />
+            </td>
+            <td class="TT"></td>
+          </tr>
+          <tr class="sanpham">
+            <td>
+              <input type="checkbox" name="checkbox" onclick="Calculator()" />
+            </td>
+            <td>Nokia</td>
+            <td><span class="dG">100</span>$</td>
+            <td id="soluong">
+              <input
+                type="number"
+                onchange="Calculator()"
+                min="0"
+                disabled
+                class="sL"
+                />
+            </td>
+            <td class="TT"></td>
+          </tr>
+
+          <tr class="sanpham">
+            <td>
+              <input type="checkbox" name="checkbox" onclick="Calculator()" />
+            </td>
+            <td>Sony Xperia</td>
+            <td><span class="dG">450</span>$</td>
+            <td id="soluong">
+              <input
+                type="number"
+                onchange="Calculator()"
+                min="0"
+                disabled
+                class="sL"
+                />
+            </td>
+            <td class="TT"></td>
+          </tr>
+          <tr class="sanpham">
+            <td>
+              <input type="checkbox" name="checkbox" onclick="Calculator()" />
+            </td>
+            <td>Motorola</td>
+            <td><span class="dG">180</span>$</td>
+            <td id="soluong">
+              <input
+                type="number"
+                min="0"
+                onchange="Calculator()"
+                disabled
+                class="sL"
+                />
+            </td>
+            <td class="TT"></td>
+          </tr>
+          <tr class="sanpham">
+            <td>
+              <input type="checkbox" name="checkbox" onclick="Calculator()" />
+            </td>
+            <td>Oppo</td>
+            <td><span class="dG">600</span>$</td>
+            <td id="soluong">
+              <input
+                type="number"
+                min="0"
+                onchange="Calculator()"
+                disabled
+                class="sL"
+                />
+            </td>
+            <td class="TT"></td>
+          </tr>
+          <tr class="sanpham">
+            <td>
+              <input type="checkbox" name="checkbox" onclick="Calculator()" />
+            </td>
+            <td>Bphone</td>
+            <td><span class="dG">90</span>$</td>
+            <td id="soluong">
+              <input
+                type="number"
+                onchange="Calculator()"
+                disabled
+                class="sL"
+                />
+            </td>
+            <td class="TT"></td>
+          </tr>
+          <tr>
+            <td colspan="4" id="SUM">TỔNG</td>
+            <td><span id="tong">0$</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <script src="js/bai3.js"></script>
+  </body>
+</html>

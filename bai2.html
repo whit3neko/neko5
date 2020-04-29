@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 2</title>
+    <link rel="stylesheet" href="css/bai2.css">
+</head>
+
+<body>
+    <script src="js/bai2.js" type="text/javascript"></script>
+    
+    <div class="container">
+        <h1>Đăng ký thành viên</h1>
+        <form action="#" method="post" enctype="multipart/form-data" name="form1" onsubmit="return ValidateForm()">
+            <label for="masv">Mã sinh viên</label>
+            <br>
+            <input type="text" class="formcontrol" id="msv" name="masv">
+            <div id="errormsv"></div>
+            <br>
+
+            <label for="ten">Họ và tên</label>
+            <br>
+            <input type="text" class="formcontrol" id="name" name="ten">
+            <div id="errorname"></div>
+            <br>
+
+            <label for="email1">Email</label>
+            <br>
+            <input type="text" class="formcontrol" id="email" name="email1">
+            <div id="erroremail"></div>
+            <br>
+
+            <label>Giới tính</label>
+            <fieldset class="formcontrol">
+                <input type="radio" name="gioitinh" id="gtnam">Nam
+                <input type="radio" name="gioitinh" id="gtnu">Nữ
+            </fieldset>
+            <div id="errorgender"></div>
+            <br>
+
+            <label>Sở thích</label>
+            <fieldset class="formcontrol">
+                <input type="checkbox" name="sothich" class="sothich">Đọc sách
+                <input type="checkbox" name="sothich" class="sothich">Du lịch
+                <input type="checkbox" name="sothich" class="sothich">Âm nhạc
+                <input type="checkbox" name="sothich" class="sothich">Ẩm thực
+                <input type="checkbox" name="sothich" class="sothich">Khác
+            </fieldset>
+            <div id="errorhob"></div>
+            <br>
+
+            <label>Quốc tịch</label>
+            <br>
+            <select name="" id="quoctich" class="formcontrol" >
+                <option value="">--Chọn quốc tịch--</option>
+                <option value="">Việt Nam</option>
+                <option value="">Italy</option>
+                <option value="">Trung Quốc</option>
+                <option value="">Hàn Quốc</option>
+                <option value="">Nhật Bản</option>
+            </select>
+            <br>
+            <div id="errorReg"></div>
+            <label>Ghi chú</label>
+            <br>
+            <textarea placeholder="(dưới 200 ký tự)" maxlength="200"  class="formcontrol" cols="20" rows="5"></textarea>
+            <br>
+            <button type="submit">Đăng ký</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
